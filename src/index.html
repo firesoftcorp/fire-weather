@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fire Weather</title>
+    <script src="https://kit.fontawesome.com/3209b7b012.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-input">
+        <input class="city-input" type="text" placeholder="Search Location">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="location-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+      </div>
+      
+      <div class="weather-data">
+        <div class="current-weather">
+          
+          <div class="details">
+            <h2></h2>
+            <h6 id="temp"></h6>
+            <h3></h3>
+            <h3></h3>
+            
+          </div>
+          
+        </div>
+        <div class="days-forecast">
+          <h2>5-Day Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card1">
+              <h3></h3>
+              <h4></h4>
+              <h4></h4>
+              <h4></h4>
+            </li>
+            <li class="card1">
+              <h3></h3>
+              <h4></h4>
+              <h4></h4>
+              <h4></h4>
+            </li>
+            <li class="card1">
+              <h3></h3>
+              <h4></h4>
+              <h4></h4>
+              <h4></h4>
+            </li>
+            <li class="card1">
+              <h3></h3>
+              <h4></h4>
+              <h4></h4>
+              <h4></h4>
+            </li>
+            <li class="card1">
+              <h3></h3>
+              <h4></h4>
+              <h4></h4>
+              <h4></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+      <source src="back.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>
