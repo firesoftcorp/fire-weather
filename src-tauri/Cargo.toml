@@ -1,6 +1,6 @@
 [package]
 name = "fire-weather"
-version = "1.0.0"
+version = "2.0.5"
 description = "A Weather app."
 authors = ["you"]
 edition = "2021"

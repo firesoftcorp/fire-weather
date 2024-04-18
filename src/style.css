@@ -39,11 +39,13 @@ h2 {
   font-size: 1.07rem;
   padding: 0 17px;
   border-radius: 9px;
-  border: 1px solid #ccc;
+  border: 1px solid #292929;
+  background-color: #292929;
+  color: #ffffff;
 }
 .weather-input input:focus {
   padding: 0 16px;
-  border: 2px solid #0033ff;
+  border: 2px solid #7490ff;
 }
 
 .weather-input button {
@@ -56,19 +58,19 @@ h2 {
   border-radius: 9px;
   font-size: 1rem;
   color: #fff;
-  background: #0077ff;
+  background: #6281ff;
   transition: 0.2s ease;
   margin-bottom: 30px;
   margin-left: 10px;
 }
 .weather-input .search-btn:hover {
-  background: #2c52ed;
+  background: #4760c5;
 }
 .weather-input .location-btn {
-  background: #0077ff;
+  background: #6281ff;
 }
 .weather-input .location-btn:hover {
-  background: #2c52ed;
+  background: #4760c5;
 }
 .weather-data {
   width: 100%;
@@ -126,12 +128,13 @@ display: flex;
   gap: 20px;
 }
 .weather-cards .card {
-  color: #000000;
+  color: #ffffff;
   padding: 18px 16px;
   list-style: none;
   width: calc(100% / 5);
-  background: #ffffff;
+  background-color: rgba(41, 41, 41, 0.5);
   border-radius: 20px;
+  backdrop-filter: blur(2px);
 }
 
 .weather-cards .card1 {
@@ -209,4 +212,112 @@ display: flex;
   min-width: 100%;
   min-height: 100%;
   z-index:-100;
+}
+
+.settings {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 50px;
+  height: 40px;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  color: #fff;
+  transition: 0.2s ease;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.settings :hover {
+  border-radius: 9px;
+  background-color: #292929;
+}
+
+.settings-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 500px;
+  background-color: rgba(41, 41, 41, 0.50);
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  border-radius: 9px;
+}
+
+.settings-window.open {
+    visibility: visible;
+}
+
+.settings-window p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 21px;
+}
+
+.settings-window .ok {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 7px 20px;
+    border: none;
+    background-color: #6281ff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-window .updates .download-button {
+    padding: 7px 20px;
+    border: none;
+    background-color: rgb(255, 174, 0);
+    color: #1e1e1e;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.settings-window .p-title {
+  text-align: start;
+  margin-left: 20px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.settings-window .button-a {
+    padding: 7px 15px;
+    border: none;
+    background-color: #6281ff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.settings-window .links a {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
 }

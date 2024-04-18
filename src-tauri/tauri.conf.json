@@ -5,8 +5,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "fire-weather",
-    "version": "1.0.0"
+    "productName": "Fire Weather",
+    "version": "2.0.5"
   },
   "tauri": {
     "allowlist": {

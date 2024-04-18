@@ -6,6 +6,7 @@
     <title>Fire Weather</title>
     <script src="https://kit.fontawesome.com/3209b7b012.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
   </head>
@@ -69,5 +70,28 @@
     <video autoplay muted loop id="myVideo">
       <source src="back.mp4" type="video/mp4">
     </video>
+
+    <button class="settings"><i class="fa-solid fa-gear"></i></button>
+    <div class="settings-window">
+      <button class="close"><i style="font-size: 18px;" class="fa-solid fa-xmark"></i></button>
+      <p>Information</p>
+      <p class="p-title">About</p>
+      <img style="max-width: 60px; margin-left: 20px; margin-top: 20px;" src="logo.png" alt="logo">
+      <p style="margin-top: 1px; font-size: 16px;" class="p-title">Fire Weather</p>
+      <p style="font-size: 14px; margin-top: 1px; color: rgb(104, 104, 104);" class="p-title">ver. 2.0.5</p>
+      <button class="ok">OK</button>
+      <div class="updates">
+        <p class="p-title">Updates</p>
+        <p class="p-title" style="font-size: 28px;" id="latest-version">Latest version: </p>
+        <p class="p-title" style="font-size: 15px; margin-top: 1px;" id="current-version">Current version: 2.0.5</p>
+        <p class="p-title" style="font-size: 16px; color: rgb(255, 174, 0);"><i style="font-size: 24px;" class="fa-solid fa-triangle-exclamation"></i>   If the latest version is higher than the current one, you must download the latest release and reinstall Fire Weather using the installer you downloaded.</p>
+        <a href="https://github.com/firesoftcorp/fire-weather/releases/latest/download/Fire.Weather.Installer.x64.exe"><button class="download-button">Download</button></a>
+      </div>
+      <div class="links">
+        <a href="https://github.com/firesoftcorp/fire-weather"><i class="fa-brands fa-github"></i></a>
+        <a style="font-size: 15px; margin-left: 40px;" href="https://github.com/firesoftcorp/fire-weather/issues">Report an issue</a>
+      </div>
+      
+  </div>
   </body>
 </html>
