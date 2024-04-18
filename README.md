@@ -49,3 +49,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 A simple weather app written in HTML, CSS, JS and built using Tauri.
+
+![image](https://github.com/firesoftcorp/fire-weather/assets/104269577/c56fa8a3-acfd-4cab-bafe-f0d4c049a1d0)
+
