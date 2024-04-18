@@ -4,7 +4,7 @@ const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
 
-const API_KEY = "API KEY"; // API key for OpenWeatherMap
+const API_KEY = "YOUR API KEY"; // API Key from OpenWeather.
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     if(index === 0) { // HTML for the main weather card
@@ -107,20 +107,3 @@ document.addEventListener('DOMContentLoaded', () => {
 locationButton.addEventListener("click", getUserCoordinates);
 searchButton.addEventListener("click", getCityCoordinates);
 cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoordinates());
-
-// Settings Window
-$('.settings').on('click', function() {
-    $('.settings-window').addClass('open');
-});
-
-$('.close, .ok').on('click', function() {
-    $('.settings-window').removeClass('open');
-});
-
-const currentVersion = document.getElementById('current-version').innerText.split(' ')[1];
-fetch('https://api.github.com/repos/firesoftcorp/fire-weather/releases/latest')
-    .then(response => response.json())
-    .then(data => {
-        const latestVersion = data.tag_name;
-        document.getElementById('latest-version').innerText = `Latest version: ${latestVersion}`;
-    })
